@@ -1,7 +1,7 @@
 ---
 num: "lect01"
 lecture_date: 2022-03-28
-desc: "Course overview, intro to linked list (C-style)"
+desc: "Course overview, Review of CS16 concepts"
 ready: true
 pdfurl: /lectures/CS24_Lecture1.pdf
 annotatedpdfurl: /lectures/CS24_Lecture1_ann.pdf
@@ -18,7 +18,5 @@ annotatedready: false
 * Course overview 
 	- why study data structures, C++ and git?
 	- what are the goals of this class?
-* Discuss options for storing an evolving list of values. Array (doesn't really work because fixed size). Better options: vector and linked list
-* Intro to linked lists: We'll start with a C-style implementation focussing on the concept of creating and modifying a linked chain
-* Create an empty list and write a function to append a new node to the linked list
+* We'll review some important concepts from CS16 that we'll need for the next lecture on linked lists
 
