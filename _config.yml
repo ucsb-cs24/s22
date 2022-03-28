@@ -5,28 +5,28 @@ plugins:
 remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
 
 url: https://ucsb-cs24.github.io 
-baseurl: "/w22"  
+baseurl: "/s22"  
 instructor: "Diba Mirza"
-name: "CS24 Winter 2022"
+name: "CS24 Spring 2022"
 course: "CS24"
 course_title: "Problem Solving with Computers II"
-title: "UCSB CS24 W22"
-github_url: https://github.com/ucsb-cs24/w22
-qtr: "W22"
-quarter: "Winter 2022"
-lecture_times: "MW 12:30pm - 1:45pm"
-lecture_location: "Online, Zoom meeting link available on Gauchospace"
-lab_times: "Thursdays: 9a, 10a, 11a, 12p, 1p, 2p, 3p, 4p"
-tas: "Luis Larios Cardenas, April Sanchez,  Lucas Relic, Jiarui Zhu, Shichang Liu, Nawel Alioua, Bowen Zhang Vinothini Gunasekaran, Roman Aguilera"
-ulas: "Lucas Nguyen, Vanessa Salgado, Julian Wong, Allison Huang"
+title: "UCSB CS24 S22"
+github_url: https://github.com/ucsb-cs24/s22
+qtr: "S22"
+quarter: "Spring 2022"
+lecture_times: "MW 2:00pm - 3:15pm"
+lecture_location: "BUCHN 1920"
+lab_times: "Thursdays: 9a, 10a, 11a, 12p, 1p"
+tas: "Lucas Nguyen,  Ganesh Sankaran, Roman Aguilera"
+ulas: "Tina Shi and Zack Glazewski"
 class_org:
-   name: ucsb-cs24-w22 
-   url: https://github.com/ucsb-cs24-w22
-   githublinker: CS24 W22
+   name: ucsb-cs24-s22 
+   url: https://github.com/ucsb-cs24-s22
+   githublinker: CS24 S22
    
-lect_repo: https://github.com/ucsb-cs24-w22/cs24-w22-lectures
+lect_repo: https://github.com/ucsb-cs24-s22/cs24-s22-lectures
 start_week: 1
-start_date: 2022-01-02
+start_date: 2022-03-27
 num_weeks: 10
 extra_exam_week: true
 
@@ -34,21 +34,20 @@ instructor_url: https://ucsb-cs24.github.io/instructor
 
 cal_dates: >
   [
-  {"label":"First day of classes", "date":"2022-01-03" },
-  {"label":"ZyBook Ch 1 activities due at 10p", "date":"2022-01-14" },
-  {"label":"ZyBook Ch 2 activities due at 10p", "date":"2022-01-28" },
-  {"label":"ZyBook Ch 3 activities due at 10p", "date":"2022-02-04" },
-  {"label":"ZyBook Ch 4 activities due at 10p", "date":"2022-02-18" },
-  {"label":"ZyBook Ch 5 activities due at 10p", "date":"2022-02-25" },
-  {"label":"ZyBook Ch 6 activities due at 10p", "date":"2022-03-04" },
-  {"label":"ZyBook Ch 7 activities due at 10p", "date":"2022-03-11" },
-  {"label":"ZyBook Ch 8 activities due at 10p", "date":"2022-03-14" },
-  {"label":"Drop deadline (no W grade)","date":"2022-01-31" },
-  {"label":"Univ Holiday - No lecture", "date":"2022-01-17" },
-  {"label":"Univ Holiday", "date":"2022-02-21" },
-  {"label":"W22 Instruction Ends", "date":"2022-03-11" },  
-  {"label":"Final Exam: 12:00PM - 3:00PM", "date":"2022-03-15" },
-  {"label":"W22 Quarter Ends", "date":"2022-03-18" }          
+  {"label":"First day of classes", "date":"2022-03-28" },
+  {"label":"ZyBook Ch 1 activities due at 11:59p", "date":"2022-04-08" },
+  {"label":"ZyBook Ch 2 activities due at 11:59p", "date":"2022-04-15" },
+  {"label":"ZyBook Ch 3 activities due at 11:59p", "date":"2022-04-22" },
+  {"label":"ZyBook Ch 4 activities due at 11:59p", "date":"2022-04-29" },
+  {"label":"ZyBook Ch 5 activities due at 11:59p", "date":"2022-05-13" },
+  {"label":"ZyBook Ch 6 activities due at 11:59p", "date":"2022-05-20" },
+  {"label":"ZyBook Ch 7 activities due at 11:59p", "date":"2022-05-27" },
+  {"label":"ZyBook Ch 8 activities due at 11:59p", "date":"2022-06-03" },
+  {"label":"Drop deadline (no W grade)","date":"2022-04-22" },
+  {"label":"Univ Holiday - No lecture", "date":"2022-05-30" },
+  {"label":"S22 Instruction Ends", "date":"2022-06-03" },  
+  {"label":"Final Exam: 4PM - 7PM", "date":"2022-06-06" },
+  {"label":"S22 Quarter Ends", "date":"2022-06-10" }          
   ]
 
 kramdown:
