@@ -1,0 +1,16 @@
+current directory: /Users/diba/git/cs24/w19/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/diba/.rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20190219-98172-1hb0z5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/diba/git/cs24/w19/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/diba/git/cs24/w19/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/diba/git/cs24/w19/vendor/bundle/ruby/2.5.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20190219-98172-huikp
