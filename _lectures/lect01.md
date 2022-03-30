@@ -5,7 +5,7 @@ desc: "Course overview, Review of CS16 concepts"
 ready: true
 pdfurl: /lectures/CS24_Lecture1.pdf
 annotatedpdfurl: /lectures/CS24_Lecture1_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 # Code from lecture
