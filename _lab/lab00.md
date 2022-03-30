@@ -266,4 +266,3 @@ Please fill out [this partner assignment form](https://forms.gle/mG63Ja34CTZWjzZ
 * If you already have a partner, then please fill out this form now.
 * If you don't have a partner, and you want to be assigned one, then please fill out this form now. The TAs will assign you a partner based on some info about yourself.
 * If you don't have a partner, and you want to search for one, then please use the dedicated Piazza thread called [Search for Teammates](https://piazza.com/class/l142oiw36ef1gh?cid=5) (this will help us avoid clutter on Piazza). After you find a partner, fill out this form.
-*
