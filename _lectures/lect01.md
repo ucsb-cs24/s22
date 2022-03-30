@@ -1,7 +1,7 @@
 ---
 num: "lect01"
 lecture_date: 2022-03-28
-desc: "Course overview, Review of CS16 concepts"
+desc: "Course overview, review of CS16 concepts"
 ready: true
 pdfurl: /lectures/CS24_Lecture1.pdf
 annotatedpdfurl: /lectures/CS24_Lecture1_ann.pdf
