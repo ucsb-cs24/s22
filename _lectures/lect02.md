@@ -4,7 +4,7 @@ desc: "Intro to Linked Lists (non-OOP style)"
 ready: true
 pdfurl: /lectures/CS24_Lecture2.pdf
 annotatedpdfurl: /lectures/CS24_Lecture2_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2022-03-30
 ---
 
