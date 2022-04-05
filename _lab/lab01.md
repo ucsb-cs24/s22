@@ -9,14 +9,14 @@ due: 2022-04-12 23:59:00.00-8
 
 # Pair programming is required for this lab
 This is the only lab where pair programming is required.
-The lab is identitical to lab09 of the Fall offering of CS16.
-If you completed it as part of CS16, you may not just resubmit that code.
+The lab is identitical to lab09 from the Fall offering of CS16.
+If you completed it as part of CS16, you may not simply resubmit that code.
 Instead, we ask that you redo the lab with a partner, preferably someone who did not take CS16 in the Fall. The goal of the lab is to help students who don't have experience implementing a linked list get the practice they need.
 By redoing the lab, you will be contributing to their learning and your own.
 
 # Goals for this lab
 
-The goal of this lab is practice iterating through linked lists and solving problems. Continue to practice code tracing to reason about your code. 
+The goal of this lab is to practice iterating through linked lists and solving problems through code tracing to reason about your code. 
 
 We request that you DO NOT ask the staff to debug your code for you. They have been specifically instructed not to debug *for* you, but rather to *guide you* through the process of debugging your code yourselves.
 
@@ -31,12 +31,12 @@ Create a repo for this lab in our class organization and clone it to your local 
 
 The starter code is in this repo:
 
-* <https://github.com/ucsb-cs24-w22/STARTER-lab02>
+* <https://github.com/ucsb-cs24-s22/STARTER-lab01>
 
-The URL for cloning this repo is this: `git@github.com:ucsb-cs24-w22/STARTER-lab02.git`
+The URL for cloning this repo is this: `git@github.com:ucsb-cs24-s22/STARTER-lab01.git`
 
 
-Once you've populated your repo, typing the `ls` command should show you the following files in your current directory
+Once you've cloned the started code repo, typing the `ls` command on your machine should show you the following files in your current directory
 
 ```
 $ ls
@@ -52,16 +52,16 @@ Here is a list of your tasks for this lab:
 
 ### Step 3a: Familiarize yourself with the big picture
 
-Type "make tests" and you will see some tests pass, but some fail.
+Type "make tests" and you will see some tests pass, but some will fail.
 
-You are finished when all the tests pass. We have implemented a few function that involve linked lists in `linkedListFuncs.cpp`. There is only one file you need to edit this week:
+You are finished when all the tests pass. We have implemented a few functions that involve linked lists in `linkedListFuncs.cpp`. There is only one file you need to edit this week:
 
 <code>moreLinkedListFuncs.cpp</code> contains more functions that deal with linked lists.  
 
 
 ### Step 3b: Work on the linked list functions
 
-Working on the linked list functions below is one of the most important things you can do to prepare for the final exam.
+Working on the linked list functions below is one of the most foundational things you can do to help you get ready for the rest of the curriculum.
 
 There are 7 functions you will need to write for this lab:
 
@@ -74,7 +74,7 @@ There are 7 functions you will need to write for this lab:
 * <code>sum</code>
 
 
-Each one has a set of tests which can be found under its corresponding heading when you type <code>make tests</code>. For example, the addIntToEndOfList tests look like this to start: 
+Each one has a set of tests which can be found under its corresponding heading when you type <code>make tests</code>. For example, the `addIntToEndOfList` tests look like this to start: 
 
 ```
 ./llTests 1
@@ -92,11 +92,11 @@ PASSED: linkedListToString(empty)
 
 ```
 
-You should replace each function stub with the correct code for the function until all of the tests for each one pass. It is recommended that you work on the functions one at a time in the order that they are presented above. That is, get all the tests to pass for addIntToStartOfList then addIntToEndOfList and so on. When all the tests pass, move on to the next step. 
+You should replace each function stub with the correct code for the function until all of the tests for each one pass. It is recommended that you work on the functions one at a time in the order that they are presented above. That is, get all the tests to pass for `addIntToStartOfList`, then `addIntToEndOfList`, and so on. When all the tests pass, move on to the next step. 
 
 ## Step 4: Checking your work before submitting
 
-When you are finished, you should be able to type  <code>make clean</code> and then <code>make tests</code> and see the following output:
+When you are finished, you should be able to type  <code>make clean</code>, and then <code>make tests</code> to see the following output:
 
 
 ```
@@ -183,27 +183,27 @@ At that point, you are ready to try submitting on Gradescope.
 
 ## Step 5: Turn in your code on Gradescope
 
-Submit all the .cpp and .h files to assignment on Gradescope via your github repo. Then visit Gradescope and check that you have a correct score.
+Submit all the `.cpp` and `.h` files to the lab01 assignment on Gradescope via your github repo. Then visit Gradescope and check that you have a correct score.
 
 * You must check that you have followed these style guidelines:
 
-1. Indentation is neat, consistent and follows good practice (see below)
+1. Indentation is neat, consistent, and follows good practice. e.g. code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way.
 2. Variable name choice: variables should have sensible names.
-	More on indentation: Your code should be indented neatly. Code that is inside braces should be indented, and code that is at the same "level" of nesting inside braces should be indented in a consistent way. Follow the examples from lecture, the sample code, and from the textbook.   
 
-Commit and push the latest version of your code on github
+Follow examples from lectures, sample codes, and from the textbook.   
+Always commit and push the latest version of your code to github
 
 ## An important word about academic honesty and the gradescope system
 
-We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded "cout" of the expected output, that will NOT receive credit.    
+We will test your code against other data files too&mdash;not just these.  So while you might be able to pass the tests on gradescope now by just doing a hard-coded "cout" of the expected output, your submission will NOT receive credit.    
 
-To be very clear, code like this will pass on gradescope, BUT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem.
+To be very clear, code like this will pass on gradescope, BUT IT REPRESENTS A FORM OF ACADEMIC DISHONESTY since it is an attempt to just "game the system", i.e. to get the tests to pass without really solving the problem.
 
-I would hope this would be obvious, but I have to say it so that there is no ambiguity: hard coding your output is a form of cheating, i.e. a form of "academic dishonesty".  Submitting a program of this kind would be subject not only to a reduced grade, but to possible disciplinary penalties. If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
+I hope this is obvious, but I have to state it so that there is no ambiguity: hard coding your output is a form of cheating, i.e. a form of "academic dishonesty".  Submitting a program of this kind would be subject not only to a reduced grade, but also to possible disciplinary penalties. If there is <em>any</em> doubt about this fact, please ask your TA and/or your instructor for clarification.
 
 ## Logging out
 
-If you are logged in remotely, you can log out using the exit command:
+If you are logged in remotely on CSIL, you can log out using the exit command:
 
 ```
 $ exit
