@@ -31,9 +31,9 @@ Create a repo for this lab in our class organization and clone it to your local 
 
 The starter code is in this repo:
 
-* <https://github.com/ucsb-cs24-w22/STARTER-lab02>
+* <https://github.com/ucsb-cs24-s22/STARTER-lab01>
 
-The URL for cloning this repo is this: `git@github.com:ucsb-cs24-w22/STARTER-lab02.git`
+The URL for cloning this repo is this: `git@github.com:ucsb-cs24-s22/STARTER-lab01.git`
 
 
 Once you've cloned the started code repo, typing the `ls` command on your machine should show you the following files in your current directory
