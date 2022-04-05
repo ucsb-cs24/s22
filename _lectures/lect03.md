@@ -1,11 +1,11 @@
 ---
 num: "lect03"
 lecture_date: 2022-04-04
-desc: "Intro to Git and Object Oriented Programming"
+desc: "Intro to Git, Linked Lists contd."
 ready: true
 pdfurl: /lectures/CS24_Lecture3.pdf
 annotatedpdfurl: /lectures/CS24_Lecture3_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 # Code from lecture
