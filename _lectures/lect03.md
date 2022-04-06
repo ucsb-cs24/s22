@@ -24,14 +24,3 @@ annotatedready: true
 
 * Read the articles on [creating a github repo under an organization](https://ucsb-cs16.github.io/topics/github_com_create_private_repo_under_org/), [cloning your first repo](https://ucsb-cs56-pconrad.github.io/topics/git_cloning_your_first_repo/) and [git basic workflow](https://ucsb-cs56-pconrad.github.io/topics/git_basic_workflow/).  We will now put the concepts from all the articles that you have read so far into practice. You may need to refer back to these articles to complete the following steps.
 
-
-
-* Intro to Object Oriented Programming
-* Intro to OOP
-* Implementing classes: class vs instance, syntax for classes, scope, methods, instance variables
-* Classes: structs but with methods
-* Accessors and modifiers
-* ADT (Abstract Data Type) ~ class (w/ info hiding) for use by other programmers
-
-
-
