@@ -1,7 +1,7 @@
 ---
 num: "lect04"
 lecture_date: 2022-04-06
-desc: "Intro to Object Oriented Programming"
+desc: "Object Oriented Programming"
 ready: true
 pdfurl: /lectures/CS24_Lecture4.pdf
 annotatedpdfurl: /lectures/CS24_Lecture4_ann.pdf

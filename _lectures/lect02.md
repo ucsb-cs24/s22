@@ -1,6 +1,6 @@
 ---
 num: "lect02"
-desc: "Intro to Linked Lists (non-OOP style)"
+desc: "Linked Lists (non-OOP style)"
 ready: true
 pdfurl: /lectures/CS24_Lecture2.pdf
 annotatedpdfurl: /lectures/CS24_Lecture2_ann.pdf
