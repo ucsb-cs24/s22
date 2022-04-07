@@ -52,7 +52,9 @@ mv STARTER-lab01 lab01_jgaucho_alily
 
 ## Step 1d: 
 
-We're going to do some git magic. If you don't know what's going on in this step, that's fine! However, if you're curious to know, please look up these commands or ask a TA/ULA!
+We're going to do some git magic. 
+
+*Note: If you don't know what's going on in this step, that's fine!*
 
 First, copy the link to your repo, like you would when cloning it.
 
@@ -64,6 +66,8 @@ git remote remove origin
 git remote add origin git@github.com:ucsb-cs24-s22/lab01_jgaucho_alily.git
 git push origin main
 ```
+
+*Note: Replace jgaucho and alily with your and your partner's usernames!*
 
 ## Step 1e:
 
