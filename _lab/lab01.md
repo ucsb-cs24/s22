@@ -77,6 +77,8 @@ Your **partner** should now be able to clone your repo:
 git clone git@github.com:ucsb-cs24-s22/lab01_jgaucho_alily.git
 ```
 
+*Note: Replace jgaucho and alily with your and your partner's usernames!*
+
 Typing `ls` should show the following files in your repo:
 
 ```
