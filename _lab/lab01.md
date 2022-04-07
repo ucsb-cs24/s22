@@ -59,6 +59,7 @@ First, copy the link to your repo, like you would when cloning it.
 Then, run the following commands:
 
 ```
+cd lab01_jgaucho_alily
 git remote remove origin
 git remote add origin git@github.com:ucsb-cs24-s22/lab01_jgaucho_alily.git
 git push origin main
@@ -66,13 +67,13 @@ git push origin main
 
 ## Step 1e:
 
-Your partner should now be able to clone your repo:
+Your **partner** should now be able to clone your repo:
 
 ```
 git clone git@github.com:ucsb-cs24-s22/lab01_jgaucho_alily.git
 ```
 
-Typing `ls` should show you the following files in your repo:
+Typing `ls` should show the following files in your repo:
 
 ```
 $ ls
