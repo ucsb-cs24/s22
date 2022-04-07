@@ -50,7 +50,7 @@ mv STARTER-lab01 lab01_jgaucho_alily
 
 *Note: Replace jgaucho and alily with your and your partner's usernames!*
 
-## Step 1d: 
+## Step 1d: Update your repo's origin
 
 We're going to do some git magic. 
 
@@ -69,7 +69,7 @@ git push origin main
 
 *Note: Replace jgaucho and alily with your and your partner's usernames!*
 
-## Step 1e:
+## Step 1e: Test your git setup
 
 Your **partner** should now be able to clone your repo:
 
