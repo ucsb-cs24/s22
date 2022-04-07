@@ -22,21 +22,57 @@ We request that you DO NOT ask the staff to debug your code for you. They have b
 
 # Step by Step Instructions
 
-## Step 1: Getting Ready
+*Note: Designate one partner to do steps 1a-d.*
 
-Create a repo for this lab in our class organization and clone it to your local machine.
+## Step 1a: Create a new repo
 
+Create a repo for this lab in our class organization.
 
-## Step 2: Obtain the starter code
+* Follow step 1b from lab00, but **do not clone the repo yet.**
+
+## Step 1b: Clone the starter code repo
 
 The starter code is in this repo:
 
 * <https://github.com/ucsb-cs24-s22/STARTER-lab01>
 
-The URL for cloning this repo is this: `git@github.com:ucsb-cs24-s22/STARTER-lab01.git`
+To clone it, run
 
+```
+git clone git@github.com:ucsb-cs24-s22/STARTER-lab01.git
+```
 
-Once you've cloned the started code repo, typing the `ls` command on your machine should show you the following files in your current directory
+## Step 1c: Rename your starter code repo
+
+```
+mv STARTER-lab01 lab01_jgaucho_alily
+```
+
+*Note: Replace jgaucho and alily with your and your partner's usernames!*
+
+## Step 1d: 
+
+We're going to do some git magic. If you don't know what's going on in this step, that's fine! However, if you're curious to know, please look up these commands or ask a TA/ULA!
+
+First, copy the link to your repo, like you would when cloning it.
+
+Then, run the following commands:
+
+```
+git remote remove origin
+git remote add origin git@github.com:ucsb-cs24-s22/lab01_jgaucho_alily.git
+git push origin main
+```
+
+## Step 1e:
+
+Your partner should now be able to clone your repo:
+
+```
+git clone git@github.com:ucsb-cs24-s22/lab01_jgaucho_alily.git
+```
+
+Typing `ls` should show you the following files in your repo:
 
 ```
 $ ls
