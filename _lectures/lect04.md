@@ -5,7 +5,7 @@ desc: "Object Oriented Programming"
 ready: true
 pdfurl: /lectures/CS24_Lecture4.pdf
 annotatedpdfurl: /lectures/CS24_Lecture4_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 # Code from lecture
@@ -19,4 +19,5 @@ annotatedready: false
 * Implementing classes: class vs instance, syntax for classes, scope, methods, instance variables
 * Accessors (getters) and modifiers (setters)
 * ADT (Abstract Data Type) ~ class (w/ info hiding) for use by other programmers
+* Operator overloading
 
