@@ -24,19 +24,203 @@ We request that you DO NOT ask the staff to debug your code for you. They have b
 
 ## Step 1: Getting Ready
 
-Create a repo for this lab in our class organization and clone it to your local machine.
+Before you create your repo, we'll introduce 2 different methods for you to set up the starter code in your own repo.   
 
+### Method A: Add starter code repo as a new Git remote
 
-## Step 2: Obtain the starter code
+Most of the instructions for this method is adopted from <https://ucsb-cs16.github.io/w22/lab/lab03/>
 
-The starter code is in this repo:
+#### Step A1: Create your lab01 repo on GitHub
 
+Create an empty repo on GitHub under the name `lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID`. You **must uncheck** the options for creating `README.md` and `.gitignore` files when you create your repo to keep it empty.     
+
+Following the steps outlined in lab00, use the SSH address to clone this repo onto your local machine through command line, i.e.
+
+```
+git clone git@github.com:ucsb-cs24-s22/lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git
+```
+
+After that, you should have a local directory called `lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID`.   
+Use the `cd` command to move into this directory.
+
+You may want to practice moving between this directory and the parent directory a few times, and using the `ls` and `pwd` commands to understandwhat is happening   
+`cd ..` lets you move into the parent directory   
+`pwd` lets you print the path of your current working directory (hence, `p`rint `w`orking `d`irectory)   
+`ls` lets you list the content of the directory   
+
+You can use `ls -a` to see that while the directory may appear empty, there is a hidden folder called `.git` that marks this folder as a git repository (or repo for short) in the local repo you just cloned:
+
+```
+$ ls -a
+.  ..  .git
+$
+```
+
+#### Step A2: Create the `main` branch in your repo
+
+Every git repo can have multiple *branches* of code; this is useful on  projects where there are multiple programmers collaborating on a solution.  Multiple branches allow for
+different versions of the code to live side-by-side in a repository, and then be merged together at a later stage.
+
+* Courses that involve group work (such as CMPSC 148 and/or CMPSC 156) may cover the use of git with multiple branches.
+* However, in this course, to keep things simple, **we'll typically stick to just one branch** 
+
+This single branch is sometimes called the *default branch*.
+* Prior to October 1, 2020, the usual name for that branch was `master`.
+* Starting October 1, 2020, GitHub started calling the default branch `main`
+
+Not all `git` software is updated with this convention however.  Accordingly, when we clone a new repo, to align our local repo with GitHub,
+our first step is to set the current branch to `main` by running the following command in your local repo:
+
+```
+git checkout -b main
+```
+
+The `git checkout` command is the one that is used to switch from one branch to another, and the `-b` command says that we are creating a new
+branch in our local repo.
+
+For the time being, and probably throughout CS24, this is likely everything you need to know about branches (at least for the purposes of this course.)
+
+Now we are ready to pull in some starter code.
+
+#### Step A3: Add a remote for starter code.
+
+While in your local repo, type this command:
+
+```
+git remote -v
+```
+
+The `-v` here stands for `verbose`, and it means that the command will give lots of helpful information. The output should look like this:
+
+```
+$ git remote -v
+origin	git@github.com:ucsb-cs24-s22/lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git (fetch)
+origin	git@github.com:ucsb-cs24-s22/lab03-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git (push)
+$ 
+```
+
+Explanation:
+* The word *remote* refers to a Git repo that lives on some other computer; in this case, a GitHub.com server. 
+* The output above shows that you have one *remote* called `origin` and it shows the URL associated with that name `origin`.  
+* By convention, the name `origin` is used for the GitHub repo from which you cloned the current repo, i.e. the one that came after `git clone` in a previous step.
+
+What we are doing to do next is add a second remote, called `starter`.  From this remote, you'll be able to pull in some starter code; your lab solution will involve
+working with some of that starter code.
+
+The starter code lives in this repo, which you can visit in a web browser to look at the starter code:
 * <https://github.com/ucsb-cs24-s22/STARTER-lab01>
 
-The URL for cloning this repo is this: `git@github.com:ucsb-cs24-s22/STARTER-lab01.git`
+To add a remote for this repo, we'll use the ssh url, like this:
 
+```
+git remote add starter git@github.com:ucsb-cs24-s22/STARTER-lab01.git
+```
 
-Once you've cloned the started code repo, typing the `ls` command on your machine should show you the following files in your current directory
+To see if it worked, you can type the `git remote -v` command again. Output should look like this (with YOUR-GITHUB-ID replaced by your github id. 
+
+```
+$ git remote -v
+origin	git@github.com:ucsb-cs24-s22/lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git (fetch)
+origin	git@github.com:ucsb-cs24-s22/lab03-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git (push)
+starter	git@github.com:ucsb-cs24-s22/STARTER-lab01.git (fetch)
+starter	git@github.com:ucsb-cs24-s22/STARTER-lab01.git (push)
+$ 
+```
+
+Note that if the URLs are wrong for either the `origin` or the `starter` remotes, you can fix that by doing this command to remove a remote:
+* `git remote remove origin` to remove the remote `origin`
+* `git remote remove starter` to remove the remote `starter`
+
+Then you can add the remote back with the correct URL, e.g.:
+* `git remote add origin git@github.com:ucsb-cs24-s22/lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git`
+* `git remote add starter git@github.com:ucsb-cs24-s22/STARTER-lab01.git`
+
+This can be used, for example, if you accidently cloned the repo using the `https` url instead of the one that starts with `git@github.com` (which is the SSH based URL).
+
+Assuming your remote for `starter` is now set up correctly, the next step is to pull in the starter code.
+
+## Step 4: Pull in Starter Code
+
+To pull in the starter code, use:
+
+```
+git pull starter main
+```
+
+Then use an `ls` command, and you should see new files in your directory.  That should look something like this:
+
+```
+$ ls
+$ git pull starter main
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 2), reused 7 (delta 2), pack-reused 0
+Unpacking objects: 100% (10/10), 2.45 KiB | 47.00 KiB/s, done.
+From github.com:ucsb-cs24-s22/STARTER-lab01
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> starter/main
+$ 
+```
+
+With these files in place, you are ready to start coding.
+
+If you don't see those files, go back through the instructions and make sure you didn't miss a step.
+
+### Method B: Clone starter code repo in a separate location and copy the files
+
+#### Step B1: Create and clone your lab01 repo
+
+Create a repo on GitHub under the name `lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID`. You can check the option for creating a `README.md` so that your new repo is non-empty. You should check the option to create a `.gitignore` and select C++ as the language so that Git will only track your cpp files and makefile and ignore any object files (`.o` files) and executables.     
+
+Following the steps outlined in lab00, use the SSH address to clone this repo onto your local machine through command line, i.e.
+
+```
+git clone git@github.com:ucsb-cs24-s22/lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID.git
+```
+
+### Step B2: Clone the starter code repo
+
+The starter code is in this repo:
+* <https://github.com/ucsb-cs24-s22/STARTER-lab01>
+* The SSH link for this repo is: `git@github.com:ucsb-cs24-s22/STARTER-lab01.git`
+
+Clone the starter code repo through the ssh link **outside of** your lab01 repo.   
+We want to avoid nesting git repositories within one another.
+
+### Step B3: Copy the starter code files into your repository
+
+Assuming that you your starter code repo and lab01 repo are located in the same directory, e.g. `~/cs24` (note that `~` is the symbol for root directory)   so that your directory structure looks something like this:
+```
+$ cd ~/cs24
+$ ls
+lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID      STARTER-lab01      <some other files or directories>
+```
+
+Now we can use the `cp` command to copy files from `STARTER-lab01` into `lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID`   
+Note that the syntax for the `cp` command looks like this:
+```
+cp <path_of_file_to_copy> <destination_to_copy_to>
+```
+So for our purpose, we will run the following command:
+```
+cp STARTER-lab01/* lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID/
+```
+We use the symbole `*` to indicate we want to copy all files from `STARTER-lab01`   
+
+`cd` into your lab01 repo to make sure all of the files are copied
+```
+cd lab01-YOUR-GITHUB-ID-PARTNER-GITHUB-ID
+```
+
+You may want to practice moving between this directory and the parent directory a few times, and using the `ls` and `pwd` commands to understandwhat is happening   
+`cd ..` lets you move into the parent directory   
+`pwd` lets you print the path of your current working directory (hence, `p`rint `w`orking `d`irectory)   
+`ls` lets you list the content of the directory   
+
+## Step 2: Checking that your lab01 repo has all starter code files
+
+Once you've pulled or copied the started code into your lab01 repo, typing the `ls` command on your machine should show you the following files in your current directory
 
 ```
 $ ls
@@ -45,6 +229,14 @@ README.md             llTests.cpp		           tddFuncs.h
 linkedList.h          moreLinkedListFuncs.cpp
 linkedListFuncs.cpp	  moreLinkedListFuncs.h
 ```
+
+Now add the changes with the starter code files, make an initial commit in your local repository, and push the new commit to your remote repository
+```
+git add .
+git commit -m "Initial version of lab01 files"
+git push origin main
+```
+If the push succeeds, you should see that your remote repository on GitHub is now updated with all the starter code files, and you are ready to get started with coding the lab.   
 
 ## Step 3: Reviewing the files and what your tasks are
 
