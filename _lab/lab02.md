@@ -107,3 +107,12 @@ If you already submitted something on Gradescope, it will take you to their “A
 For this lab, if everything is correct, you’ll see a successful submission passing all of the Autograder tests.
 
 **Remember to add your partner to Group Members for this submission on Gradescope if applicable. At this point, if you worked in a pair, it is a good idea for both partners to log into Gradescope and check if you can see the uploaded files for Lab02.**
+
+## Fill out the partner assignment form for lab03
+
+Please fill out [this partner assignment form](https://forms.gle/HcH5cqSUuHQumxT18) before you begin working on lab03.
+
+* If you already have a partner, then please fill out this form now.
+* If you don't have a partner, and you want to be assigned one, then please fill out this form now. The TAs will assign you a partner based on some info about yourself.
+* If you don't have a partner, and you want to search for one, then please use the dedicated Piazza thread called [Search for Teammates](https://piazza.com/class/l142oiw36ef1gh?cid=5) (this will help us avoid clutter on Piazza). After you find a partner, fill out this form.
+* If you wish to work alone, then you do not need to fill out this form
