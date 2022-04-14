@@ -401,4 +401,11 @@ If you are logged in remotely on CSIL, you can log out using the exit command:
 $ exit
 ```
 
+## Fill out the partner assignment form for lab02
 
+Please fill out [this partner assignment form](https://forms.gle/AeMahHqPy243FQtX8) before you begin working on lab02.
+
+* If you already have a partner, then please fill out this form now.
+* If you don't have a partner, and you want to be assigned one, then please fill out this form now. The TAs will assign you a partner based on some info about yourself.
+* If you don't have a partner, and you want to search for one, then please use the dedicated Piazza thread called [Search for Teammates](https://piazza.com/class/l142oiw36ef1gh?cid=5) (this will help us avoid clutter on Piazza). After you find a partner, fill out this form.
+* If you wish to work alone, then you do not need to fill out this form
