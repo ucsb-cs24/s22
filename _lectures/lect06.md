@@ -5,7 +5,7 @@ desc: "Big Four and Makefiles contd + Linked List OOP style"
 ready: true
 pdfurl: /lectures/CS24_Lecture6.pdf
 annotatedpdfurl: /lectures/CS24_Lecture6_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 # Code from lecture

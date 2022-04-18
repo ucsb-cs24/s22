@@ -5,7 +5,7 @@ desc: "Big Four and Makefiles"
 ready: true
 pdfurl: /lectures/CS24_Lecture5.pdf
 annotatedpdfurl: /lectures/CS24_Lecture5_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 # Code from lecture
