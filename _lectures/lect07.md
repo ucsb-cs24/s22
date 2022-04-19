@@ -4,7 +4,7 @@ desc: "Rule of Three  "
 ready: true
 pdfurl: /lectures/CS24_Lecture7.pdf
 annotatedpdfurl: /lectures/CS24_Lecture7_ann.pdf
-annotatedready: false 
+annotatedready: true 
 lecture_date: 2022-04-18
 ---
 
