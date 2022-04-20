@@ -139,7 +139,7 @@ This can be used, for example, if you accidently cloned the repo using the `http
 
 Assuming your remote for `starter` is now set up correctly, the next step is to pull in the starter code.
 
-## Step 4: Pull in Starter Code
+#### Step A4: Pull in Starter Code
 
 To pull in the starter code, use:
 
