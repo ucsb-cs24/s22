@@ -33,7 +33,7 @@ All work submitted for this lab should be your own and your partners. If you are
 ## Step by Step Instructions
 
 ## Step 0: Create a git repo and get the starter code
-Refer to lab01 for instructions on how to set up a GitHub repository and pull the starter code for this lab. Here is the link for this lab's starter code: <https://github.com/ucsb-cs24-s22/STARTER-lab04/blob/main/intbst.h>
+Refer to lab01 for instructions on how to set up a GitHub repository and pull the starter code for this lab. Here is the link for this lab's starter code: <https://github.com/ucsb-cs24-s22/STARTER-lab04>
 If you are working in pairs, only one partner needs to create the Repository, but make sure to add the other partner as a collaborator.
 
 ## Step 0a: The starter code
