@@ -47,8 +47,8 @@ The first thing you should do is create a simple Makefile that compiles intbst.c
 
 A binary search tree class for integers, class IntBST is defined in intbst.h - please study this file for details of the class's features:
 
-The constructor, destructor, insert method and pre-order print method are to be implemented in intbst.cpp. Notice the insert method will return false to indicate an attempt to insert a duplicate value; otherwise it inserts the value and returns true.
-In Step 2, you will implement the other two print methods, in-order and post-order. In Step 3 you will implement the sum, count and contains methods. In Step 4, you will implement the predecessor, successor, and remove methods. Step 4 will likely take you the most time BY FAR, so plan accordingly.
+In Step 1, the constructor, destructor, and insert method are to be implemented in intbst.cpp. Notice the insert method will return false to indicate an attempt to insert a duplicate value; otherwise it inserts the value and returns true.
+In Step 2, you will implement the three print methods, pre-order, in-order, and post-order. In Step 3 you will implement the sum, count and contains methods. In Step 4, you will implement the predecessor, successor, and remove methods. Step 4 will likely take you the most time BY FAR, so plan accordingly.
 The binary tree node structure is defined in the private area. The only instance variable is a node pointer, to point at the root node of the tree or at 0 if the tree is empty.
 Several utility functions are declared in the private area too. These functions can be recursive (by virtue of their Node* parameters), and the public methods may choose to use them or not. See how the destructor uses clear, for example, and the insert method uses the overloaded version of insert, each by passing the root pointer to the corresponding utility function. Also take note of the definition of getNodeFor, which will be useful in several of the functions you need to implement. Consider implementing this function immediately after the print functions, and think about where you can reuse it.
 
@@ -93,7 +93,7 @@ Empty BST:
 ```
 
 As you can see, none of the functions do anything at the moment, but you can start by implementing the constructor and insert methods since these will server as the foundation for future testing. 
-* Constructor: Even though the IntBST class may have many member functions associated with it, its only member variable is a Node*. 
+* Constructor: Even though the IntBST class may have many member functions associated with it, its only member variable is a Node* type called root. 
 * Insert: Think about the properties of a binary search tree and traverse the tree accordingly. Note there is a private helper function for insert declared in intbst.h
 
 Next, the destructor function, which uses a helper function called clear. 
@@ -103,7 +103,7 @@ Next, the destructor function, which uses a helper function called clear.
 
 # Step 2: Implement pre-order, in-order, and post-order binary tree printing
 
-Now that we have the foundations for creating an object of IntBST, scroll to the print functions (starting line 60). Inside IntBST.h, you will notice there are both public and private implementations of the functions printPreOrder, printInOrder and printPostOrder. The private functions will be used as helpers to their public counterparts. Your job is to implement all of them, public and private.
+Now that we have the foundations for creating an object of IntBST, scroll to the print functions (starting line 60). Inside IntBST.h, you will notice there are both public and private implementations of the functions printPreOrder, printInOrder and printPostOrder. The private functions will be used as helpers to their public counterparts. Your job in this step is to implement all of them, public and private.
 After you finish, save and then test your print implementations: compile and execute testbst again, choosing either all tests or just one of your print functions to test.
 Here are the correct results (abbreviated to show just the print orders):
 
@@ -123,6 +123,7 @@ First: switch roles between pilot and navigator if you did not already do that.
 
 You may do these tasks in any order. Check the results of each part as you complete it.
 
+Implement the helper function getNodeFor() - this function will be helpful for future functions.
 Implement the helper function for sum() - notice the public method just returns the result of the helper function. We suggest you use recursion to do so. Think about these questions before starting to code: What's the base case? What should be returned in the base case? What should be returned in the general (recursive) case?
 Implement the helper function for count() - this is very similar to the sum() function.
 Implement the public contains method, either recursively or iteratively - both are about the same level of difficulty in this case. If you decide to use recursion, you can use getNodeFor() in your implementation of contains(). You won't need this utility function to solve the problem iteratively. In either case, remember the tree is a binary search tree, and so your solution should run in O(log n) time.
@@ -204,11 +205,6 @@ In a file named test_intbst.cpp, include code to test all the functions that you
 # Step 6: Submit your revised intbst.cpp, test_intbst.cpp and intbst.h
 
 You are allowed to modify intbst.h, though you should not need to, so submit both intbst.cpp and intbst.h to Gradescope for a grade out of 100. 
-# Optional Extra Challenge
 
-AFTER you have completed the main lab, you may modify it for extra credit by converting your BST to a generic data structure. For convenience, we will not change any of the file or data structure names, but your structure should be useable as IntBST<T> where T is a type that can be compared with <, >, etc. This could include double, char, or any other basic type. There is a separate Gradescope submission portal for this extra credit assignment. Make sure to have a full-credit submission on the main assignment's Gradescope before working on this part.
-
-Note that you should implement a generic type in intbst.cpp and include it in your header file as #include "intbst.cpp".
-Submit files: intbst.h and intbst.cpp
 
 </div>
