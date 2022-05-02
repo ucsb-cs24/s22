@@ -5,7 +5,7 @@ desc: "Analyzing the efficiency of algorithms - Part 1"
 ready: true
 pdfurl: /lectures/CS24_Lecture10.pdf
 annotatedpdfurl: /lectures/CS24_Lecture10_ann.pdf
-annotatedready: false	
+annotatedready: true	
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
