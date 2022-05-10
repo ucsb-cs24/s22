@@ -25,8 +25,10 @@ To do this you will need to use the concept of templates in C++.
 
 Since templates only provide a blueprint for the defintion of a class (or function), your implementations of the class `IntBST<T>` in `intbst.cpp` and `intbst.h` cannot be compiled to machine code directly. 
 This is because the compiler doesn't know how to instantiate the template parameter, `T`, of the class. 
+
 Instead, the compiler needs additional context on how the class is used and the type of data it works with to generate the code. 
 This additional context is provided when objects of type `IntBST<T>` are declared, and the template parameter is specified to be a particular value/type. 
+
 For this reason, you shouldn't try to compile `intbst.cpp` as a separate object file, 
 but instead, `#include intbst.cpp` right after the class definition in `intbst.h`.
 
