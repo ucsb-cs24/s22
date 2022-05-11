@@ -3,7 +3,7 @@ layout: lab
 num: lab01
 ready: true
 desc: "Linked Lists in C++ with structs"
-assigned: 2022-04-06 23:59:00.00-8
+assigned: 2022-04-06 15:00:00.00-8
 due: 2022-04-13 23:59:00.00-8
 ---
 
