@@ -5,7 +5,7 @@ desc: "BST running time analysis and STL set"
 ready: true
 pdfurl: /lectures/CS24_Lecture12.pdf
 annotatedpdfurl: /lectures/CS24_Lecture12_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 # Topics

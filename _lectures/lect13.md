@@ -5,7 +5,7 @@ desc: "C++ templates"
 ready: true
 pdfurl: /lectures/CS24_Lecture13.pdf
 annotatedpdfurl: /lectures/CS24_Lecture13_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 The topics covered today are relevant for lab05.
