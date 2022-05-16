@@ -5,7 +5,7 @@ desc: "Stack and Queue"
 ready: true
 pdfurl: /lectures/CS24_Lecture14.pdf
 annotatedpdfurl: /lectures/CS24_Lecture14_ann.pdf
-annotatedready: true
+annotatedready: false
 ---
 
 ## Code written in class
