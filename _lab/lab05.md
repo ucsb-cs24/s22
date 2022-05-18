@@ -4,7 +4,7 @@ num: lab05
 ready: true
 desc: "Generic Binary Search Tree"
 assigned: 2022-05-11 15:00:00.00-8
-due: 2022-05-18 23:59:00.00-8
+due: 2022-05-20 23:59:00.00-8
 ---
 <div markdown="1">
 
