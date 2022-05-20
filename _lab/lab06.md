@@ -39,7 +39,7 @@ Check that you have the following files
 evalfull.cpp  intstack.h  usestack.cpp
 ```
 
-First look at `intstack.h to learn what you can do with objects of this type. You can also notice how a stack can be implemented with an array - since all of the methods are very simple, they are implemented "inline" as part of the function definition.
+First look at intstack.h to learn what you can do with objects of this type. You can also notice how a stack can be implemented with an array - since all of the methods are very simple, they are implemented "inline" as part of the function definition.
 
 Now look at usestack.cpp - notice it starts with `#include "intstack.h"` so it can create objects of type Stack and use the public methods of that class. The main function creates a Stack object named s, then it pushes first 10 then 20 onto the stack.
 
