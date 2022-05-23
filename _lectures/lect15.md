@@ -1,11 +1,11 @@
 ---
 lecture_date: 2022-04-18
 num: "lect15"
-desc: "C++ Iterators and more STL practice"
+desc: "C++ Iterators and more STL practice, Priority Queues"
 ready: true
 pdfurl: /lectures/CS24_Lecture15.pdf
 annotatedpdfurl: /lectures/CS24_Lecture15_ann.pdf
-annotatedready: false
+annotatedready: true
 ---
 
 ## Code written in class
